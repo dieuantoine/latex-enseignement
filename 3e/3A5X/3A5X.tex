@@ -1,0 +1,129 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage{main}
+\usepackage{exercices}
+
+\renewcommand{\typedocument}{Exercices}
+\renewcommand{\classe}{3e}
+\renewcommand{\titre}{Révision Brevet}
+
+\newcounter{numqglobal}
+
+\newcommand{\q}[1]{%
+    \refstepcounter{numqglobal}%
+    \vspace{0.15em}%
+    \noindent
+    \thenumqglobal.\;#1%
+    \par
+}
+
+\begin{document}
+
+\creertitre{Révision Brevet --- Physique-Chimie}
+
+\begin{multicols*}{2}
+
+% ============================================================
+%  CHIMIE
+% ============================================================
+
+\exercice{Constitution de la matière}
+
+\q{Classer chacune des entités suivantes entre atome, ion ou molécule : CH\textsubscript{4}, H, dioxyde de carbone, Fe\textsuperscript{2+}, dioxygène, O\textsuperscript{2-}, H\textsubscript{2}O}
+
+\q{Nommer les particules contenues dans le noyau d'un atome, et celles qui se déplacent autour du noyau.}
+
+\q{L'atome de fer est noté $^{56}_{26}$Fe. Donner son nombre de protons, d'électrons et de neutrons.}
+
+\q{Donner le nom et le nombre d'atomes présents dans la molécule d'octane C\textsubscript{8}H\textsubscript{18}.}
+
+\q{Un atome de zinc Zn perd deux électrons. Écrire la formule de l'ion ainsi formé.}
+
+\exercice{Transformations chimiques}
+
+\q{On synthétise de l'ammoniac à partir de diazote et de dihydrogène :
+\[ \text{N}_2 + 3\,\text{H}_2 \longrightarrow 2\,\text{NH}_3 \]
+On dispose de \SI{824}{kg} de diazote et \SI{176}{kg} de dihydrogène. Quelle sera la masse d'ammoniac produite ?}
+
+\q{Le pH d'une solution est égal à \num{9,3}. La solution est-elle acide ou basique ? Quels ions sont majoritaires (H\textsuperscript{+} ou HO\textsuperscript{-}) ?}
+
+\q{Compléter les coefficients de la réaction de combustion du méthane en remplaçant chaque \textbf{?} par le bon nombre :
+\[ \text{C}\text{H}_{4} + \mathbf{?}\,\text{O}_2 \longrightarrow \mathbf{?}\,\text{CO}_2 + \mathbf{?}\,\text{H}_2\text{O} \]}
+
+\q{Rédiger le protocole expérimental d'un test caractéristique.}
+
+\exercice{Propriétés de la matière}
+
+\q{On chauffe un glaçon jusqu'à ce qu'il devienne de l'eau liquide. Comment appelle-t-on cette transformation physique ? La masse et le volume de l'eau ont-ils changé ?}
+
+\q{Un bloc de métal a une masse de \SI{40,5}{g} pour un volume de \SI{15}{mL}. Calculer sa masse volumique en précisant l'unité. Pour identifier le métal, faut-il utiliser la masse ou la masse volumique ? Pourquoi ?}
+
+% ============================================================
+%  MÉCANIQUE
+% ============================================================
+
+\exercice{Mouvements et vitesse}
+
+\q{Donner la définition d'un mouvement rectiligne accéléré et d'un mouvement circulaire uniforme.}
+
+\q{Rappeler la formule de la vitesse moyenne d'un objet, en précisant les unités.}
+
+\exercice{Interactions et forces}
+
+\q{Une bûche de bois flotte sur l'eau. Quelles sont les forces qui s'exercent sur la bûche ? Dessiner le diagramme objet-interaction.}
+
+\q{Quelle est la masse d'un rhinocéros dont le poids sur Terre est de \SI{20000}{N} ? (On prendra $g = \SI{10}{N/kg}$)}
+
+\q{Représenter le rhinocéros par un rectangle et son poids par une flèche, en utilisant l'échelle : \mbox{1 cm $\leftrightarrow$ \SI{4000}{N}}.}
+
+% ============================================================
+%  ÉNERGIE
+% ============================================================
+
+\exercice{Formes et conversions d'énergie}
+
+\q{Citer les 6 formes d'énergie vues en cours.}
+
+\q{Donner la définition d'une source d'énergie renouvelable.}
+
+\q{S'il n'y a aucun échange d'énergie avec l'extérieur, que peut-on dire de l'énergie totale d'un système ?}
+
+\q{Lors d'une chute libre, en quelle forme d'énergie est convertie l'énergie potentielle de pesanteur ?}
+
+\q{Si l'altitude d'un objet diminue, que se passe-t-il pour son énergie potentielle de pesanteur ? Rappeler la formule de $E_{pp}$ avec les unités de chaque grandeur.}
+
+\q{Calculer l'énergie cinétique d'un rhinocéros de masse $m = \SI{3000}{kg}$ chargeant à $v = \SI{54}{km/h}$. Donner le résultat en joules.}
+
+\q{Le rayonnement est-il un mode de transfert d'énergie ou de conversion d'énergie ?}
+
+% ============================================================
+%  ÉLECTRICITÉ
+% ============================================================
+
+\exercice{Puissance et énergie électrique}
+
+\q{Quelle est la loi d'additivité des intensités ? Dans quel type de circuit s'applique-t-elle ?}
+
+\q{Rappeler la loi d'Ohm et préciser les unités de chaque grandeur.}
+
+Une lampe fonctionne avec une puissance de \SI{44}{W} sous une tension de \SI{220}{V}.
+
+\q{Calculer l'intensité du courant qui la traverse.}
+
+\q{Si la lampe est allumée pendant \SI{8}{h}, quelle énergie électrique a-t-elle consommée ? Préciser l'unité.}
+
+
+% ============================================================
+%  SIGNAUX SONORES
+% ============================================================
+
+\exercice{Signaux sonores et lumineux}
+
+\q{Quelles sont les fréquences audibles pour l'être humain ?}
+
+\q{Des dauphins utilisent un sonar (ondes sonores) pour détecter les obstacles. La vitesse du son dans l'eau est $v = \SI{1500}{m.s^{-1}}$. Combien de temps s'écoule-t-il entre l'émission et la réception d'une onde si l'obstacle est à \SI{500}{m} ?}
+
+\q{Par quoi peut-on représenter un rayon lumineux ?}
+
+\end{multicols*}
+\end{document}

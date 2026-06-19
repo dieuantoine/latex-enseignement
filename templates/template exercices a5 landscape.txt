@@ -1,0 +1,14 @@
+\documentclass[11pt,a5paper,landscape]{article}
+
+\usepackage{main}
+\usepackage{exercices}
+
+\renewcommand{\typedocument}{Exercices}
+\renewcommand{\classe}{e}
+\renewcommand{\titre}{Exercices - }
+
+\begin{document}
+\begin{multicols*}{2}
+
+\end{multicols*}
+\end{document}

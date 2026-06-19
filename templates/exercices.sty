@@ -1,0 +1,33 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{exercices}[21/04/2026 Template exercices]
+
+\setlist[enumerate]{topsep=0pt,itemsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=*}
+\setlist[itemize]{topsep=0pt,itemsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=*}
+
+% --------------------------------------------------
+% Compteurs
+% --------------------------------------------------
+\newcounter{numexercice}
+\newcounter{numquestion}[numexercice]
+
+\renewcommand{\thenumquestion}{\thenumexercice.\arabic{numquestion}}
+
+% --------------------------------------------------
+% Commandes
+% --------------------------------------------------
+\newcommand{\exercice}[1]{%
+    \refstepcounter{numexercice}%
+    \vspace{0.5em}%
+    \noindent
+    {\large \textbf{Exercice \thenumexercice{} : #1}}%
+    \par
+    \vspace{0.1em}%
+}
+
+\newcommand{\question}[1]{%
+    \refstepcounter{numquestion}%
+    \vspace{0.3em}%
+    \noindent
+    \textbf{\thenumquestion}\;#1%
+    \par
+}

@@ -1,0 +1,105 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{main-sss}[16/06/2026 Template septembre-sciences.fr]
+
+% --------------------------------------------------
+% Packages Police/Langue
+% --------------------------------------------------
+
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[french]{babel}
+\RequirePackage{lmodern}
+\RequirePackage{amssymb}
+
+% --------------------------------------------------
+% Packages Mise en page
+% --------------------------------------------------
+
+\RequirePackage[
+  margin=12pt,
+  includeheadfoot,
+  headheight=15pt,
+  headsep=10pt,
+  footskip=22pt
+]{geometry}
+
+\RequirePackage{fancyhdr}
+\RequirePackage{multicol}
+\RequirePackage{enumitem}
+\RequirePackage{lastpage}
+\RequirePackage[table]{xcolor}
+\RequirePackage{graphicx}
+\RequirePackage{hyperref}
+
+% Useful colors
+\definecolor{headergrey}{RGB}{200, 200, 200}
+\definecolor{vertfonce}{RGB}{0,100,0}
+\definecolor{violet}{HTML}{5E17EB}
+\definecolor{orange}{HTML}{FF751F}
+
+% --------------------------------------------------
+% Packages Scientifiques
+% --------------------------------------------------
+
+\RequirePackage{siunitx}
+\sisetup{locale = FR}
+\RequirePackage{amsmath}
+
+% --------------------------------------------------
+% Informations du document
+% --------------------------------------------------
+
+\newcommand{\matiere}{}
+\newcommand{\niveau}{}
+\newcommand{\typedocument}{}
+\newcommand{\identifiantsujet}{}
+
+% --------------------------------------------------
+% Mise en page
+% --------------------------------------------------
+
+\setlist[itemize,1]{label=\textbullet}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+
+% --------------------------------------------------
+% En-tête et pied de page
+% --------------------------------------------------
+
+\pagestyle{fancy}
+\fancyhf{}
+
+% Entête
+\fancyhead[L]{\matiere{} - \niveau}
+\fancyhead[R]{\typedocument}
+\renewcommand{\headrulewidth}{1pt}
+
+% Pied de page
+\renewcommand{\footrulewidth}{1pt}
+\fancyfoot[L]{\identifiantsujet}
+\fancyfoot[R]{https://www.septembre-sciences.fr/}
+
+\newcommand{\pagination}{%
+  \fancyfoot[C]{\thepage / \pageref{LastPage}}
+}
+
+% --------------------------------------------------
+% Titre du document
+% --------------------------------------------------
+
+\newcommand{\creertitre}[1]{%
+    \vspace*{-1em}
+    \begin{center}
+        {%
+            \setlength{\fboxsep}{15pt}
+            \fbox{%
+                \parbox{0.9\linewidth}{%
+                    \centering
+                    \Large \textbf{#1}
+                }%
+            }%
+        }%
+    \end{center}
+    \vspace{0.2em}
+}

@@ -1,0 +1,39 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{corrige-sss}[16/06/2026 Template corrigés septembre-sciences.fr]
+
+% --------------------------------------------------
+% Informations du sujet
+% --------------------------------------------------
+
+\newcommand{\examen}{}
+\newcommand{\annee}{}
+\newcommand{\localisation}{}
+\newcommand{\titresujet}{}
+
+% --------------------------------------------------
+% Début de sujet
+% --------------------------------------------------
+
+\newcommand{\titre}{%
+    \vspace{1em}
+    \begin{center}
+        {\large Corrigé du \examen{} \annee{} - \localisation}\\[0.3em]
+        {\large \href{https://www.septembre-sciences.fr}{septembre-sciences.fr}}\\[2em]
+        {\LARGE \textsc{\matiere{}} : \textbf{\titresujet}}
+    \end{center}
+    \vspace{0.5em}
+}
+
+% --------------------------------------------------
+% Compteur de questions
+% --------------------------------------------------
+
+\newcounter{numquestion}
+
+\newcommand{\q}[1][]{%
+    \refstepcounter{numquestion}%
+    \vspace{0.5em}%
+    \noindent\textbf{Question \thenumquestion%
+    \if\relax\detokenize{#1}\relax\else{} (#1)\fi{} :}%
+    \par
+}

@@ -1,0 +1,20 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{main}
+\usepackage{cours}
+
+\renewcommand{\typedocument}{Cours}
+\renewcommand{\classe}{e}
+\renewcommand{\titre}{}
+
+\begin{document}
+
+\pagination
+
+\creertitre{Titre du chapitre}
+
+\partie{Nom de la partie}
+
+\souspartie{Nom de la sous-partie}
+
+\end{document}

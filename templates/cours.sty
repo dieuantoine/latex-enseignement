@@ -1,0 +1,36 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{cours}[21/04/2026 Template cours]
+
+\RequirePackage{xspace}
+\RequirePackage{ulem}
+\RequirePackage{tcolorbox}
+
+\newcounter{partie}
+
+\newcommand{\partie}[1]{%
+    \refstepcounter{partie}
+    \vspace{1em}
+    \noindent
+    \large \textbf{\uline{\thepartie. #1}}
+    \par
+    \vspace{0.5em}
+}
+
+\newcounter{souspartie}[partie]
+
+\newcommand{\souspartie}[1]{%
+    \refstepcounter{souspartie}
+    \vspace{0.5em}
+    \noindent\hspace{3em}
+    \uline{\thepartie.\thesouspartie. #1}
+    \par
+    \vspace{0.3em}
+}
+
+\newcommand{\important}[1]{%
+    \textbf{\textcolor{red}{#1}}\xspace
+}
+
+\newcommand{\exemple}[1]{%
+    \textcolor{vertfonce}{\uline{Exemple(s) :} #1}\xspace
+}

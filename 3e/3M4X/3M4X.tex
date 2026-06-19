@@ -1,0 +1,79 @@
+\documentclass[11pt,a5paper,landscape]{article}
+
+\usepackage{main}
+\usepackage{exercices}
+\usepackage{tcolorbox}
+
+\renewcommand{\typedocument}{Exercices}
+\renewcommand{\classe}{3e}
+
+\begin{document}
+
+\begin{tcolorbox}[
+  title=\textbf{Données},
+  colback=headergrey!30,
+  colframe=black,
+  fonttitle=\normalsize,
+  boxrule=0.8pt,
+  left=6pt, right=6pt, top=4pt, bottom=4pt
+]
+\begin{multicols}{2}
+\begin{itemize}
+  \item Intensité de la pesanteur sur Terre : $g = \SI{9,8}{N/kg}$
+  \item Intensité de la pesanteur sur la Lune : $g_{\text{L}} = \SI{1,6}{N/kg}$
+  \item Intensité de la pesanteur sur Mars : $g_{\text{M}} = \SI{3,7}{N/kg}$
+  \item Intensité de la pesanteur sur Jupiter : $g_{\text{J}} = \SI{25}{N/kg}$
+\end{itemize}
+\columnbreak
+\begin{itemize}
+  \item Masse de la Terre : $M_T = \SI{5,97e24}{kg}$
+  \item Rayon de la Terre : $R_T = \SI{6,37e6}{m}$
+  \item Formule de la force de gravitation : $F = G \times \frac{m_1 \times m_2}{d^2}$
+  \item Constante de gravitation : $G = \SI{6,67e-11}{} USI$
+\end{itemize}
+\end{multicols}
+\end{tcolorbox}
+
+\vspace{0.4em}
+
+\begin{multicols*}{2}
+
+\exercice{Poids et masse}
+\question{Quelle est le poids d'un astronaute de masse \SI{80}{kg} sur la Lune ? Et sur Jupiter ?}
+\question{Un véhicule a une masse de \SI{1000}{kg} et un poids de \SI{3700}{N}. Sur quelle planète se trouve-t-il?}
+\question{Une balle de golf a une masse de \SI{0,04}{kg} sur Terre.}
+\begin{enumerate}[label=\alph*)]
+    \item Quelle est sa masse sur la Lune ? 
+    \item Quel est son poids sur la Lune ?
+    \item Quels appareils peuvent être utilisés pour mesurer sa masse et son poids sur la Lune ?
+\end{enumerate}
+
+
+\exercice{Diagramme objets-interactions}
+
+Une feuille est coincée contre un mur par une main.
+
+Dessiner le diagramme objets-interactions de ce système en indiquant les interactions qui s'exercent sur la feuille.
+
+\exercice{Voiture}
+
+Une voiture de masse \SI{1200}{kg} est à l'arrêt à l'horizontale.
+
+\begin{enumerate}[label=\alph*)]
+    \item Schématiser la situation avec un dessin.
+    \item Quelles sont les forces qui s'exercent sur la voiture ?
+    \item Calculer le poids de la voiture.
+    \item Représenter les forces sur le dessin. (1cm = \SI{2000}{N})
+\end{enumerate}
+
+\exercice{Gravitation universelle}
+
+\begin{enumerate}[label=\alph*)]
+    \item Rappeler la formule du poids d'un objet en fonction de $m$ et $g$.
+    \item A la surface de la Terre, le poids d'un objet est égal à la force de gravitation. Ecrire l'égalité.
+    \item En déduire la formule de l'intensité de pesanteur $g$ à la surface de la Terre en fonction de sa masse $M_T$ et de son rayon $R_T$.
+    \item Calculer l'intensité de pesanteur à la surface de la Terre en utilisant les données fournies.
+\end{enumerate}
+
+\end{multicols*}
+\end{document}

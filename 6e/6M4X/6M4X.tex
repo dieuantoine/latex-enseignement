@@ -1,0 +1,79 @@
+\documentclass[11pt,a5paper,landscape]{article}
+
+\usepackage{main}
+\usepackage{exercices}
+
+% --------------------------------------------------
+% Informations du document
+% --------------------------------------------------
+\renewcommand{\typedocument}{Exercices}
+\renewcommand{\classe}{6e}
+\renewcommand{\titre}{Exercices - Vitesse}
+
+\begin{document}
+
+\setlist[enumerate]{topsep=0pt,itemsep=10pt,parsep=0pt,partopsep=0pt,leftmargin=*}
+
+\setlength{\columnsep}{1cm}
+
+\begin{multicols*}{2}
+
+\setcounter{numexercice}{5}
+
+% ----- Exercice 6 -----
+
+\exercice{}
+
+Le tableau ci-dessous contient des valeurs manquantes.
+
+Utilise le triangle des formules pour calculer chaque valeur manquante dans la bonne unité, puis complète le tableau.
+
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3cm}|}
+\hline
+\rowcolor{gray!30}
+\textbf{Vitesse} & \textbf{Distance} & \textbf{Temps} \\
+\hline
+\SI{50}{\meter/\second}    & ? \SI{}{\meter}              & \SI{20}{\second} \\
+\hline
+\SI{10}{\meter/\second}    & \SI{20}{\meter}            & ? \SI{}{\second} \\
+\hline
+? \SI{}{\kilo\meter/\hour}   & \SI{3}{\kilo\meter}        & \SI{15}{\minute} \\
+\hline
+\SI{1.5}{\meter/\second}   & \SI{15}{\meter}            & ? \SI{}{\second} \\
+\hline
+\SI{60}{\kilo\meter/\hour} & ? \SI{}{\kilo\meter}         & \SI{3}{\hour} \\
+\hline
+? \SI{}{\meter/\second}      & \SI{1}{\kilo\meter}        & \SI{100}{\second} \\
+\hline
+\end{tabular}
+
+% ----- Exercice 7 -----
+
+\exercice{Méthode du triangle}
+
+\question{Quelle est la formule pour calculer la vitesse ?}
+
+\question{Quelle est la formule pour calculer la masse volumique ($\rho$) ?}
+
+\question{Pour chacune des formules, dessiner le triangle correspondant.}
+
+\question{Pour chacune des situations suivantes :}
+
+\begin{itemize}
+    \item Identifier les éléments du triangle présents dans l'énoncé, et les réécrire avec la bonne unité.
+    \item Utiliser la méthode du triangle pour trouver la formule à utiliser.
+    \item Calculer la grandeur demandée et répondre à la question.
+\end{itemize}
+
+\begin{enumerate}[label=\alph*)]
+    \item Une fusée avance avec la vitesse de \SI{300}{\meter/\second}. Quelle distance a-t-elle parcourue en 1 minute ?
+    \item Une sculpture en pierre a un volume de \SI{90}{\centi\meter\cubed} et une masse de \SI{216}{\gram}. Quelle est sa masse volumique ?
+    \item L’arrêt de bus est à \SI{0,4}{\kilo\meter}. En marchant à \SI{2}{\meter/\second} combien de temps faut-il pour y arriver ? Le prochain bus arrive dans \SI{3}{\minute}, arriveras-tu à temps ?
+    \item Une voiture roule \SI{300}{\kilo\meter} en \SI{2}{\hour}. Quelle est sa vitesse ? La limitation est à \SI{130}{\kilo\meter/\hour}, est-ce que le conducteur risque une amende ?
+    \item Un avion vole à \SI{900}{\kilo\meter/\hour}. Combien de temps met-il pour parcourir \SI{4500}{\kilo\meter} ?
+    \item L'huile d'olive a une masse volumique de \SI{0,8}{\gram/\centi\meter\cubed}. Quelle est la masse d'une bouteille de \SI{100}{\centi\meter^3} ?
+\end{enumerate}
+
+\end{multicols*}
+\end{document}

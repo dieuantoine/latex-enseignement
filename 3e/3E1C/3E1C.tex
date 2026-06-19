@@ -1,0 +1,94 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{main}
+\usepackage{cours}
+
+\renewcommand{\typedocument}{Cours}
+\renewcommand{\classe}{3e}
+\renewcommand{\titre}{Electricité}
+
+\begin{document}
+
+\pagination
+
+\creertitre{Electricité}
+
+\partie{Circuit électrique}
+
+Un circuit électrique est un ensemble de dipôles, \important{générateur} et \important{récepteurs}, reliés par des fils électriques.
+
+Pour fonctionner, le circuit doit être \important{fermé}. Le courant circule de la borne positive (+) à la borne négative (-) du générateur.
+
+%% Tableau sur les dipôles %%
+
+Les dipôles peuvent être associés de différentes manières :
+
+\begin{itemize}
+    \item en \important{série} : les dipôles sont branchés les uns à la suite des autres. Ils forment une seule boucle.
+    \item en \important{dérivation} : les bornes des dipôles sont reliées deux à deux. Le circuit forme plusieurs boucles.
+\end{itemize}
+
+%% Exemple de circuit en série et en dérivation %%
+
+\partie{Les lois de l'électricité}
+
+Le fonctionnement d’un dipôle dans un circuit électrique dépend de deux grandeurs physiques :
+
+\begin{itemize}
+    \item La \important{tension électrique U} à ses bornes ; elle se mesure en \important{Volt (V)} avec un voltmètre branché en dérivation.
+    \item L'\important{intensité du courant I} qui le traverse : elle se mesure en \important{Ampère (A)} avec un ampèremètre branché en série.
+\end{itemize}
+
+\souspartie{Dans un circuit en série}
+
+%% Dessin d'un circuit en série %%
+
+\uline{Loi d’unicité de l’intensité} : Dans un circuit en série, l’intensité du courant est la même partout.
+
+\uline{Loi d’additivité de la tension} : La tension aux bornes d’un ensemble de dipôles est égale à la somme des tensions aux bornes de chaque dipôle.
+
+\souspartie{Dans un circuit en dérivation}
+
+%% Dessin d'un circuit en dérivation %%
+
+\uline{Loi d’additivité de l’intensité} : Au niveau d'un noeud, l’intensité du courant dans la branche principale est égale à la somme des intensités dans les branches dérivées.
+
+\uline{Loi d’unicité de la tension} : les tensions aux bornes des dipôles branchés en dérivation sont égales.
+
+\souspartie{Résistance électrique}
+
+Les résistances (conducteurs ohmiques) sont des dipôles qui s’opposent au passage du courant électrique.
+
+\uline{Loi d’Ohm} : la tension aux bornes d’une résistance est proportionnelle à l’intensité du courant électrique qui la traverse :
+
+\begin{center}
+    \LARGE\important{$U = R \times I$}
+\end{center}
+
+On appelle aussi résistance R ce coefficient de proportionnalité. Son unité est l’\important{Ohm (\si{\ohm})}.
+
+\partie{Puissance électrique}
+
+La \important{puissance électrique (P)}, reçue ou fournie par un dipôle, dépend de la tension U à ses brones et de l’intensité I du courant qui la traverse :
+
+\begin{center}
+    \LARGE\important{$P = U \times I$}
+\end{center}
+
+L’unité de la puissance est le \important{Watt (W)}.
+
+Cette puissance correspond à l’énergie transférée par l’appareil par unité de temps :
+
+\begin{center}
+    \LARGE{\important{$P = E / t$} ou \important{$E = P \times t$}}
+\end{center}
+
+Si t est donné en s, E sera en Joule (J), si t est donné en h, E sera en Wattheure (Wh).
+
+\partie{Sécurité électrique}
+
+Lorsque  trop d’appareils électriques sont utilisés en même temps, l’intensité du courant devient trop élevée. Cela peut provoquer des surchauffes et même des incendies. On utilise des disjoncteurs pour protéger les personnes et les installations électriques.
+
+Le corps humain aussi peut-être traversé par un courant électrique. A partir de 100 mA cela peut entraîner une électrocution.
+
+\end{document}

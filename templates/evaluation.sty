@@ -1,0 +1,58 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{evaluation}[21/04/2026 Template evaluation]
+
+\RequirePackage{ulem}
+
+% --------------------------------------------------
+% Compteurs
+% --------------------------------------------------
+\newcounter{exercice}
+\newcounter{question}[exercice]
+
+\renewcommand{\thequestion}{\theexercice.\arabic{question}}
+
+% --------------------------------------------------
+% Affichage conditionnel du barème
+% --------------------------------------------------
+\newcommand{\affichebareme}[1]{%
+  \if\relax\detokenize{#1}\relax
+  \else
+    \hfill \textbf{/#1}
+  \fi
+}
+
+% --------------------------------------------------
+% Commandes d'évaluation
+% --------------------------------------------------
+\newcommand{\exercice}[2][]{%
+  \refstepcounter{exercice}
+  \setcounter{question}{0}
+  \vspace{1em}
+  \noindent
+  \textbf{ \large{Exercice \theexercice{}} : #2}%
+  \if\relax\detokenize{#1}\relax\else
+    \textbf{ \large{(#1 points)}}%
+  \fi
+  \par
+  \vspace{0.5em}
+}
+
+\newcommand{\question}[2][]{%
+  \refstepcounter{question}
+  \vspace{0.5em}
+  \noindent
+  \textbf{\thequestion} \; #2%
+  \affichebareme{#1}
+  \par
+}
+
+\newcommand{\identiteeleve}{%
+  \noindent
+  \textbf{Nom :} \hrulefill \hspace{1cm}
+  \textbf{Prénom :} \hrulefill
+  \par\vspace{0.8em}
+  \noindent
+  \textbf{Classe :} \hrulefill \hspace{1cm}
+  \textbf{Date :} \hrulefill
+  \par\vspace{1em}
+}
